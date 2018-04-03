@@ -29,3 +29,23 @@
                           GRID
 ******************************************************************
 */
+
+.grid-container{
+    margin:0 auto;
+    width:1040px;
+    /*height: 200vh;*/
+    background-image: url(../img/grid.png)
+}
+
+.col-1{
+    width:242px;
+    background: red;
+    height: 250px;
+    float: left;
+    margin-right:24px;
+}
+
+.rm-mrg-rgt{
+    margin-right: 0;
+}
+
