@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<title>Form Attributs: Auto Focus</title>
+    	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+       	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet"  href="css/reset.css">
+    	<link rel="stylesheet"  href="css/styles.css">
+
+    	<!--[if lt IE 9]>
+			<script src="path-to-shiv/html5shiv.js"></script>
+		<![endif]-->
+    </head>
+<body>
+	<main>
+		<h1>Using the Autofocus Attribute</h1>
+		<p>This form has several input fields. On platforms that have native support for <code>autofocus</code>, the input focus is automatically directed to the first form element that has the autofocus attribute.</p>
+		<p>Otherwise, a custom javascript function is used to accomplish the same effect. Try moving the autofocus attribute around in the source code to see 
+		what happens.</p>
+
+		<form class="fav-food-form" method="get" action="#">
+		    <fieldset>
+		        <legend>Favorite Foods</legend>
+		        <div>
+		            <label for="fruit">Favorite Fruit: </label>
+		            <input name="fruit" type="text" id="fruit" autofocus/>
+		        </div>
+		        <div>
+		            <label for="vegetable">Favorite Vegetable: </label>
+		            <input name="vegetable" type="text" id="vegetable" />
+		        </div>
+		        <div>
+		            <label for="beverage">Favorite Beverage: </label>
+		            <input name="beverage" type="text" id="beverage" />
+		        </div>
+		        <div>
+		            <label for="snack">Favorite Snack: </label>
+		            <input name="snack" type="text" id="snack" />
+		        </div>
+		        <div>
+		            <button type="submit">Submit</button>
+		        </div>
+		        <div>
+		            <!-- button to advance to next page goes here -->
+		        </div>
+		    </fieldset>
+		</form>
+	</main>
+</body>
+</html>

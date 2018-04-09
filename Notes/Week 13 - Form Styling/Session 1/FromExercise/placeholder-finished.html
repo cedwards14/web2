@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<title>Form Attributes: Placeholder</title>
+    	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+       	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/reset.css">
+    	<link rel="stylesheet" href="css/styles.css">
+        
+    	<!--[if lt IE 9]>
+			<script src="path-to-shiv/html5shiv.js"></script>
+		<![endif]-->
+    </head>
+<body>
+
+	<main>
+		<h1>Using the Placeholder Attribute</h1>
+		<p>The <code>placeholder</code> attribute displays placeholder text in an input control that suggests to the user the kind of input the control is looking for. The placeholder text displays when the control does not have focus and has no user-supplied input. When the control has focus, the placeholder text disappears.</p>
+		<p>The control in this form uses the placeholder attribute to specify placeholder text, if the browser supports it. Add the placeholder attribute to each form field giving the user a hint of what to enter.</p>
+
+		<form action="#" method="get">
+            <div>
+                <label for="search">Search:</label>
+                <input name="search" type="search" id="search"/>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input name="email" type="email" id="email"/>
+            </div>
+            <div>
+                <label for="url">Website:</label>
+                <input name="url" type="url" id="url"/>
+            </div>
+            <div>
+            	<label for="postal-code">Postal Code: </label>
+            	<input name="postal-code" type="text" id="postal-code" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"/>
+            </div>
+            <div>
+            	<label for="zip">Zip Code: </label>
+            	<input name="zip" type="text" id="zip" pattern="(\d{5}([\-]\d{4})?)"/>
+            </div>
+            <div>
+            	<label for="phone">Phone Number: </label>
+            	<input name="phone" type="text" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+            <div>
+            	<!-- button to advance to next page, with alert, goes here -->
+            </div>
+	   </form>
+	</main>
+</body>
+</html>

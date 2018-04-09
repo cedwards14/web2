@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Form Demo</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <form class="demo-form" action="index.html" method="get">
+            <fieldset>
+                <legend>Form Fields</legend>
+                <div>
+                    <label for="textField">Text Field</label>
+                    <input id="textField" type="text" name="field-text" />
+                </div>
+                <div>
+                    <label for="passwordField">Password Field</label>
+                    <input id="passwordField" type="password" name="field-password" />
+                </div>
+                <div>
+                    <!-- radio buttons - must share the same name to be connected -->
+                    <label>Radio Field</label>
+                    <input type="radio" name="radio-field" value="first" checked> First
+                    <input type="radio" name="radio-field" value="second"> Second
+                    <input type="radio" name="radio-field" value="third"> Third
+                </div>
+                <div>
+                    <!-- checkboxes -->
+                    <label>Checkbox Field</label>
+                    <input type="checkbox" name="checkbox-field1" value="first"> First
+                    <input type="checkbox" name="checkbox-field2" value="second" checked> Second
+                    <input type="checkbox" name="checkbox-field3" value="third"> Third
+                </div>
+                <div>
+                    <label for="selectField">Select Field</label>
+                    <select id="selectField" name="field-select">
+                        <option value="1">One</option>
+                        <option value="2" selected>Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="textareaField">Textarea</label>
+                    <!-- text between the tags displays in browser (value) -->
+                    <textarea cols="15" rows="5" id="textareaField" name="field-textarea"></textarea>
+                </div>
+                <div>
+                    <!-- legacy button -->
+                    <input type="button" name="button-field" value="Legacy Button" />
+                </div>
+                <div>
+                    <!-- html5 button -->
+                    <button type="button">New Button</button>
+                </div>
+                <div>
+                    <!-- legacy submit button -->
+                    <input type="submit" name="submit-field" value="Legacy Submit">
+                </div>
+                <div>
+                    <!-- html5 submit button -->
+                    <button type="submit">New Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

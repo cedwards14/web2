@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<title>Form Attributs: Pattern Matching</title>
+    	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+       	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet"  href="css/reset.css">
+    	<link rel="stylesheet"  href="css/styles.css">
+
+    	<!--[if lt IE 9]>
+			<script src="path-to-shiv/html5shiv.js"></script>
+		<![endif]-->
+    </head>
+<body>
+	<main>
+		<h1>Using the Pattern Attribute</h1>
+		<p>The <code>pattern</code> attribute ensures that text entered into a field matches a specified RegEx pattern. When the form is submitted, a browser that supports this feature checks to see if the value entered into the field matches the given Regular Expression (if the supplied value is not an empty string).</p>
+		<ul>
+			<li>Pattern Matching</li>
+			<li>Canadian Postal Code Format: A0A 0A0</li>
+			<li>Canadian Postal Code Pattern: [A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]</li>
+		</ul>
+		<p>Add more fields for asking for an American Zip Code and a North American phone number. Find the patterns at <a href="http://html5pattern.com/">http://html5pattern.com/</a>.</p>
+
+		<form method="get" action="#">
+			<fieldset>
+				<legend>Address:</legend>
+				<div>
+					<label for="postal-code">Postal Code: </label>
+					<input name="postal-code" type="text" id="postal-code" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"/>
+				</div>
+				<!-- add american zip code field -->
+				<!-- add phone number field -->
+				<div>
+					<button type="submit">Submit</button>
+				</div>
+			</fieldset>
+			<div>
+				<!-- button to advance to next page goes here -->
+			</div>
+		</form>
+	</main>
+</body>
+</html>

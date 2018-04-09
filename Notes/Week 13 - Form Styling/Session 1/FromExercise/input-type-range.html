@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+    	<meta charset="utf-8">
+    	<title>Form Type Range:</title>
+    	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+       	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/reset.css">
+    	<link rel="stylesheet" href="css/styles.css">
+
+    	<!--[if lt IE 9]>
+			<script src="path-to-shiv/html5shiv.js"></script>
+		<![endif]-->
+    </head>
+
+<body>
+<main>
+    <h1>Using the Range Input type</h1>
+    <p>The range input type indicates to the browser that the field is expecting a numeric value selected from within a given range.</p>
+    <p>This input type can also be used with the min, max, and step attributes (number intervals) to provide additional UI features to help the user select a number. The slider option looks a bit odd in that no values are displayed, but may be useful for more 'analog' inputs. Step defaults to 1 and can be left out in most cases.</p>
+    <p>Notice the position of the sliders with the given values they already contain. Change their values and see what happens.</p>
+
+    <form action="#" method="get">
+        <div>
+            <label>Regular Text Field:</label>
+            <input name="Text1" type="text" />
+        </div>
+        <div>
+            <label>Range Field:</label>
+            <input name="Text2" type="range" value="5"/>
+        </div>
+        <div>
+            <label>Range Field (Min and Max):</label>
+            <input name="Text3" type="range" min="0" max="120" value="120"/>
+        </div>
+        <div>
+            <label>Range Field (Step):</label>
+            <input name="Text4" type="range" value="5" step="5"/>
+        </div>
+        <div>
+            <label>Range Field (Min, Max, and Step):</label>
+            <input name="Text5" type="range" min="2" max="12" step="2" value="6"/>
+        </div>
+        <div>
+            <label>Range Field (Fractions, Min, Max, and Step):</label>
+            <input name="Text5" type="range" min="0.0" max="2.0" step="0.2" value="0.8"/>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        <div>
+            <!-- button to advance to next page goes here -->
+        </div>
+    </form>
+</main>
+</body>
+
+</html>

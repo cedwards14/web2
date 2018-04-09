@@ -1,0 +1,47 @@
+
+html {font-size: 62.5%;  /* 62.5% of 16 = 10 */
+      box-sizing: border-box;   }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {font-size: 16px; font-size: 1.6rem; /* = 16px */
+        background-color: #f6f6f6;
+        font-family: 'Lora', serif;   } 
+
+header, main, footer {width: 70%;
+            margin: 0 15%;
+            background-color: #fff;
+            padding: 5.0rem;
+            line-height: 1.5 }
+
+/*  ----- Typograhical Scales -----  */  
+
+h1, h2, legend {margin-top: 1rem;
+                padding-left: 0.5rem;
+                font-family: 'PT Sans Caption', sans-serif;   }
+
+h1 { font-size: 3.6rem;   }
+
+h2, legend { font-size: 2.4rem; }
+  
+p, ol, ul { margin: 1rem; }
+
+ol { list-style-type: lower-roman;
+     margin-left: 4.0rem;
+}
+
+.input-types li:nth-child(odd), li:nth-child(1) {  font-weight: bold;
+              font-family: 'PT Sans Caption', sans-serif;
+}
+
+div {  margin: 1em;  } 
+
+code {  color:#ff0000;  }
+
+strong {font-weight: 700;
+        font-style: italic;
+}
+
+span { font-family: arial;
+    font-weight: 500;
+}
