@@ -1,0 +1,11 @@
+@import 'base';
+@import 'variables';
+@import 'nav';
+
+
+body{
+    background: $body-color;
+    font-family: $header-font;
+    font-size: $base-font;
+}
+
